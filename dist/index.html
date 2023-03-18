@@ -5,28 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Image Slider</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="<%=require('../src/style.css')%>"
-    />
+    <link rel="stylesheet" type="text/css" href="../src/style.css" />
   </head>
   <body>
-    <div class="content">
-      <div class="slider-container">
+    <div class="slider">
+      <div class="slide">
         <img
-          class="left-arrow"
-          src="<%=require('../src/assets/left-arrow.svg')%>"
-          alt="left arrow"
-        />
-        <div class="slider"></div>
-        <img
-          class="right-arrow"
-          src="<%=require('../src/assets/right-arrow.svg')%>"
-          alt="right-arrow"
+          class="one"
+          src="<%=require('../src/assets/one.jpg')%>"
+          alt="Photo One"
         />
       </div>
-      <div class="bubbles-container"></div>
+      <div class="slide">
+        <img
+          class="two"
+          src="<%=require('../src/assets/two.jpg')%>"
+          alt="Photo Two"
+        />
+      </div>
+      <div class="slide">
+        <img
+          class="three"
+          src="<%=require('../src/assets/three.jpg')%>"
+          alt="Photo Three"
+        />
+      </div>
+      <div class="slide">
+        <img
+          class="four"
+          src="<%=require('../src/assets/four.jpg')%>"
+          alt="Photo Four"
+        />
+      </div>
+      <img
+        class="right-arrow"
+        src="<%=require('../src/assets/right-arrow.svg')%>"
+        alt="right-arrow"
+      />
+      <img
+        class="left-arrow"
+        src="<%=require('../src/assets/left-arrow.svg')%>"
+        alt="left arrow"
+      />
     </div>
     <script defer="defer" src="main.js"></script>
   </body>
