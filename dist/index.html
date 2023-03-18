@@ -1,1 +1,33 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Image Slider</title></head><body><script defer="defer" src="main.js"></script><script defer="defer" src="main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Image Slider</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="<%=require('../src/style.css')%>"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <div class="slider-container">
+        <img
+          class="left-arrow"
+          src="<%=require('../src/assets/left-arrow.svg')%>"
+          alt="left arrow"
+        />
+        <div class="slider"></div>
+        <img
+          class="right-arrow"
+          src="<%=require('../src/assets/right-arrow.svg')%>"
+          alt="right-arrow"
+        />
+      </div>
+      <div class="bubbles-container"></div>
+    </div>
+    <script defer="defer" src="main.js"></script>
+  </body>
+</html>
