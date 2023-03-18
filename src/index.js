@@ -35,3 +35,12 @@ prevSlide.addEventListener("click", function () {
     slide.style.transform = `translateX(${100 * (index - currentSlide)}%)`;
   });
 });
+
+/* const circlesDiv = document.querySelector(".circles");
+slides.forEach((index) => {
+    let circle = document.createElement("img");
+    circle.classList.add('circle');
+    circle.setAttribute(id, index);
+    circle.src = "<%=require('../src/assets/empty-circle.svg')%>";
+    circlesDiv.appendChild(circle);
+}) */

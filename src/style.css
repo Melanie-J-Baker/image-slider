@@ -37,8 +37,8 @@ body {
 .left-arrow,
 .right-arrow {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   padding: 10px;
   z-index: 10px;
   cursor: pointer;
@@ -57,4 +57,12 @@ body {
 .right-arrow {
   top: 45%;
   right: 2%;
+}
+
+.circles {
+  margin-bottom: 400px;
+}
+
+.circle {
+  width: 20px;
 }
