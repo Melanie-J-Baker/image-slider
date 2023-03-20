@@ -72,15 +72,15 @@ play.addEventListener("click", () => {
 });
 
 function pauseSlideshow() {
-  play.classList.add("pause");
-  play.classList.remove("play");
+  play.classList.add("play");
+  play.classList.remove("pause");
   playing = false;
   clearInterval(slideshow);
 }
 
 function playSlideshow() {
-  play.classList.add("play");
-  play.classList.remove("pause");
+  play.classList.add("pause");
+  play.classList.remove("play");
   playing = true;
   slideshow = setInterval(() => {
     if (currentSlide === maxSlide) {
