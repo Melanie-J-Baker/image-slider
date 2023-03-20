@@ -62,7 +62,7 @@ body {
 .circles {
   margin-bottom: 400px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 8px;
 }
 
@@ -73,6 +73,26 @@ body {
   background-size: cover;
 }
 
+.circle:hover {
+  cursor: pointer;
+}
+
 .filled {
   background-image: url("assets/filled-circle.svg");
+}
+
+.play {
+  width: 20px;
+  height: 20px;
+  background-image: url("assets/play.svg");
+  background-size: cover;
+}
+
+.pause {
+  width: 20px;
+  height: 20px;
+}
+.play:hover,
+.pause:hover {
+  cursor: pointer;
 }
