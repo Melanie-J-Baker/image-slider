@@ -50,3 +50,44 @@ circles.forEach((dot) => {
     renderCurrentSlide();
   });
 });
+
+const play = document.querySelector("#play-btn");
+let slideshow = setInterval(() => {
+  if (currentSlide === maxSlide) {
+    currentSlide = 0;
+  } else {
+    currentSlide++;
+  }
+  renderCurrentSlide();
+}, 5000);
+
+let playing = true;
+
+play.addEventListener("click", () => {
+  if (playing) {
+    pauseSlideshow();
+  } else {
+    playSlideshow();
+  }
+});
+
+function pauseSlideshow() {
+  play.classList.add("pause");
+  play.classList.remove("play");
+  playing = false;
+  clearInterval(slideshow);
+}
+
+function playSlideshow() {
+  play.classList.add("play");
+  play.classList.remove("pause");
+  playing = true;
+  slideshow = setInterval(() => {
+    if (currentSlide === maxSlide) {
+      currentSlide = 0;
+    } else {
+      currentSlide++;
+    }
+    renderCurrentSlide();
+  }, 5000);
+}

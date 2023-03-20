@@ -91,7 +91,9 @@ body {
 .pause {
   width: 20px;
   height: 20px;
+  background-image: url("assets/pause.svg");
 }
+
 .play:hover,
 .pause:hover {
   cursor: pointer;
