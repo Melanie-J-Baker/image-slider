@@ -61,8 +61,18 @@ body {
 
 .circles {
   margin-bottom: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 8px;
 }
 
 .circle {
   width: 20px;
+  height: 20px;
+  background-image: url("assets/empty-circle.svg");
+  background-size: cover;
+}
+
+.filled {
+  background-image: url("assets/filled-circle.svg");
 }

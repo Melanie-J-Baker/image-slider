@@ -17,11 +17,9 @@ const renderCurrentSlide = () => {
   });
   circles.forEach((dot) => {
     if (dot.id == currentSlide) {
-      dot.alt = "filled nav circle";
-      dot.src = "<%=require('../src/assets/filled-circle.png')%>";
+      dot.classList.add("filled");
     } else {
-      dot.alt = "nav circle";
-      dot.src = "<%=require('../src/assets/empty-circle.png')%>";
+      dot.classList.remove("filled");
     }
   });
 };
