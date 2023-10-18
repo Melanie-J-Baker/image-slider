@@ -1,5 +1,7 @@
 # image-slider
 
+https://melanie-j-baker.github.io/image-slider/
+
 An image slider with left/right arrows, clickable 'bubbles' corresponding to each image, and a function to automatically change the image every 5 seconds. 
 
 ![image](https://github.com/Melanie-J-Baker/image-slider/assets/104843873/7213662a-c31d-4347-8e73-6719930b10cb)
