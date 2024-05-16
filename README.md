@@ -1,5 +1,7 @@
 # image-slider
 
+Built as part of the Odin Project curriculum: https://www.theodinproject.com/lessons/node-path-javascript-dynamic-user-interface-interactions#image-slider
+
 Try it here: https://melanie-j-baker.github.io/image-slider/
 
 An image slider with left/right arrows, clickable 'bubbles' corresponding to each image, and a function to automatically change the image every 5 seconds. 
